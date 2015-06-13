@@ -9,4 +9,5 @@ git add 只是把工作区的更改提交到暂存区，git commit
 git diff
 
 
-jdjfisfus
+ddddddddddddddddddddddddddddddddddddddddddddddddddddd
+git pull 
