@@ -30,7 +30,7 @@ int main(int argc , char *argv[])
     puts("Socket created");
      
     //server.sin_addr.s_addr = inet_addr("192.168.1.15");
-    server.sin_addr.s_addr = inet_addr("192.168.1.11");
+    server.sin_addr.s_addr = inet_addr("127.0.0.1");
     server.sin_family = AF_INET;
     server.sin_port = htons( 6990 );
  
@@ -82,8 +82,11 @@ int main(int argc , char *argv[])
     }
 
 	// 发送数据
-	senddata(sock,send_buf,voice,sizeof(voice));	
-
+	int senddata_len = senddata(sock,send_buf,voice,sizeof(voice));	
+	int i =0;
+	for (i = 0; i < senddata_len; i++)
+		printf("%x ",send_buf[i]);
+	printf("\n");
     sleep(1000);
     close(sock);
     return 0;
@@ -186,11 +189,11 @@ int  senddata(int fd, char *buf,char *data,int dlen)
         {
 
             puts("Send failed");
-			return ret;
+			return len;
         }
 
         printf("振作%d\n",ret);
-		return ret;
+		return len;
 
 
 }
