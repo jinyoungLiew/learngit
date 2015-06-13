@@ -9,7 +9,7 @@
 
 
 int mfptp_pack_string(char *src, char *buf, int max_len);
-int senddata(int fd, char *buf,int dlen,int more);
+int senddata(int fd, char *buf,char *,int dlen);
 
 int main(int argc , char *argv[])
 {
@@ -17,9 +17,9 @@ int main(int argc , char *argv[])
     struct sockaddr_in server;
     unsigned char message[1024*1024*8] , server_reply[2000];
      
-	unsigned char send_buf[SEND_BUFF_LEN] = {0};
+	char send_buf[SEND_BUFF_LEN] = {0};
 
-	unsigned char voice[] = "qiang fang you she xiang tou";
+	char voice[] = "qiang fang you she xiang tou";
 
     //Create socket
     sock = socket(AF_INET , SOCK_STREAM , 0);
@@ -178,7 +178,7 @@ int  senddata(int fd, char *buf,char *data,int dlen)
     int ret; 
 	//1. 先发一个数据包
 	
-		more = 0;
+	int	more = 0;
         int len = mfptp_pack_frames_with_hdr(buf,data,dlen,more);
 		
         printf("sending data =%d\n",len);
