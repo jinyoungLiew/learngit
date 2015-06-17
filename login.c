@@ -1,15 +1,20 @@
-/*by liujinyang 
+/*
 */
 #include<stdio.h> //printf
 #include<string.h>    //strlen
 #include<sys/socket.h>    //socket
 #include<arpa/inet.h> //inet_addr
 
-#define SEND_BUFF_LEN 1460
-
+#define SEND_BUFF_LEN 100*1024*1024 
+#define FRAME_NBR 3 
 
 int mfptp_pack_string(char *src, char *buf, int max_len);
 int senddata(int fd, char *buf,char *,int dlen);
+
+unsigned char send_buf[SEND_BUFF_LEN] = {0};
+// 每帧2M
+//unsigned char data[FRAME_NBR][10*1024*1024];
+unsigned char data[FRAME_NBR][1024];
 
 int main(int argc , char *argv[])
 {
@@ -17,7 +22,6 @@ int main(int argc , char *argv[])
     struct sockaddr_in server;
     unsigned char message[1024*1024*8] , server_reply[2000];
      
-	char send_buf[SEND_BUFF_LEN] = {0};
 
 	char voice[] = "qiang fang you she xiang tou";
 
@@ -80,13 +84,54 @@ int main(int argc , char *argv[])
         printf("登录成功，准备好接收微薄\n");
         break;
     }
+	
+		#if 1 
+		// 发送数据
+		int senddata_len = senddata(sock,send_buf,voice,sizeof(voice) - 1);	
 
-	// 发送数据
-	int senddata_len = senddata(sock,send_buf,voice,sizeof(voice));	
-	int i =0;
-	for (i = 0; i < senddata_len; i++)
-		printf("%x ",send_buf[i]);
-	printf("\n");
+		int i =0;
+		for (i = 0; i < senddata_len; i++)
+			printf(" %x ",send_buf[i]);
+		printf("\n");
+		#endif
+
+	//package
+	int packages = 3;
+	while(packages >0)
+	{
+		printf("现在，第%d包：\n",3 - packages + 1);
+		int more = 1;
+		//帧
+		for (i = 0; i < FRAME_NBR; i++)
+		{
+			//最后一帧
+			if (i == FRAME_NBR - 1)
+				more = 0;
+			// 帧数组初始化;
+			memset(data[i],'a'+i,sizeof(data[i]));
+
+		    senddata_len +=	senddata_multi_frame(sock,send_buf + senddata_len ,data[i],/*strlen(data[i])*/sizeof(data[i]),more);
+			printf("senddata_len = %d\n",senddata_len);
+
+		}
+		printf("第%d包打包完成：\n",3 - packages + 1);
+
+		packages--;
+	}
+	//数据打包完毕，一起发送
+		printf("发送3包数据\n");
+		int alldata = send(sock,send_buf,senddata_len,0);
+		printf("send %d data\n",alldata);
+		#if 0
+		for (i = 0; i < alldata; i++)
+		{
+			if (i % 20 == 0)
+				printf("\n");
+			printf("0x%02x ",send_buf[i]);
+		}
+		printf("\n");
+		#endif
+
     sleep(1000);
     close(sock);
     return 0;
@@ -103,7 +148,7 @@ int mfptp_pack_string(char *src, char *buf, int max_len)
         buf[6] =0x10; /* 版本*/
         buf[7] =0x00; /*压缩、加密*/
         buf[8] =0x04; /* REP */
-        buf[9] =0x01; /* 包个数*/
+        buf[9] =0x01; /* 包个数*/ // 3包
         buf[10]=0x00; /* FP_CONTROL  */
 
         if(NULL != src){
@@ -136,10 +181,11 @@ int mfptp_pack_frames_with_hdr( char *buf,char *data, int data_len,int more)
         buf[6] =0x10; /* 版本*/
         buf[7] =0x00; /*压缩、加密*/
         buf[8] =0x04; /* REP */
-        buf[9] = 0x1; /* 包个数*/
+        buf[9] = 0x3; /* 包个数*/
 
         if(0!=more){
-            buf[10]=0x04; /* FP_CONTROL----低4位高两位  */ }else{
+            buf[10]=0x04; /* FP_CONTROL----低4位高两位  */
+		}else{
             buf[10]=0x00;
         }
 
@@ -181,9 +227,32 @@ int  senddata(int fd, char *buf,char *data,int dlen)
     int ret; 
 	//1. 先发一个数据包
 	
-	int	more = 0;
+	int	more = 1;
         int len = mfptp_pack_frames_with_hdr(buf,data,dlen,more);
 		
+#if 0
+        printf("sending data =%d\n",len);
+        if( (ret = send(fd, buf , len, 0)) < 0)
+        {
+
+            puts("Send failed");
+			return len;
+        }
+#endif
+
+       // printf("振作%d\n",ret);
+		return len;
+
+
+}
+int  senddata_multi_frame(int fd, char *buf,char *data,int dlen,int more)
+{
+	
+    int ret; 
+	//1. 先发一个数据包
+	
+        int len = mfptp_pack_frames_no_hdr(buf,data,dlen,more);
+#if 0		
         printf("sending data =%d\n",len);
         if( (ret = send(fd, buf , len, 0)) < 0)
         {
@@ -192,35 +261,55 @@ int  senddata(int fd, char *buf,char *data,int dlen)
 			return len;
         }
 
-        printf("振作%d\n",ret);
+#endif
+        //printf("多帧%d\n",ret);
 		return len;
 
 
 }
-int mfptp_pack_frames_no_hdr(int len, char *buf, int more)
+int mfptp_pack_frames_no_hdr(char *buf,char *data, int data_len,int more)
 {
         int ret = -1;
         if(0!=more){
-            buf[0]=0x04; /* FP_CONTROL  */
-        }else{
+            buf[0]=0x04; /* FP_CONTROL----低4位高两位  */ }else{
             buf[0]=0x00;
         }
+		printf("本帧长度%d 0x%x\n",data_len,data_len);
+	
+        unsigned char *p=(unsigned char *)&data_len;
 
-        unsigned char *p=(unsigned char *)&len;
-        if(len<=255){
-            buf[1]=len;
-            ret = len+2;
-        }else if(len<=65535){
-            buf[0]=buf[0] | 0x01; /* FP_CONTROL  */
+        if(data_len<=255){
+            buf[1]=data_len;
+
+			memcpy(&buf[2],data,data_len);
+
+            ret = data_len+2;
+        }else if(data_len<=65535){
             buf[1]=*(p+1);
             buf[2]=*(p);
-            ret = len+3;
-        }else{
-            buf[0]=buf[0]|0x02; /* FP_CONTROL  */
+            buf[0]=buf[0] | 0x01; /* FP_CONTROL 低4为低两位 1--->2 */
+
+			memcpy(&buf[3],data,data_len);
+            ret = data_len+3;
+        }else if (data_len <= 16777215){
             buf[1]=*(p+2);
             buf[2]=*(p+1);
             buf[3]=*(p);
-            ret = len+4;
-        }
+            buf[0]=buf[0]|0x02; /* FP_CONTROL  低4位低两位2--->3*/
+
+			memcpy(&buf[4],data,data_len);
+            ret = data_len+4;
+        }else {
+			printf("一帧大于16M,len = %d\n",data_len);
+            buf[1]=*(p+3);
+            buf[2]=*(p+2);
+            buf[3]=*(p+1);
+			buf[4] = *(p);
+            buf[0]=buf[0]|0x03; /* FP_CONTROL  低4位低两位2--->3*/
+
+			memcpy(&buf[5],data,data_len);
+            ret = data_len+5;
+		
+		}
         return ret;
 }
