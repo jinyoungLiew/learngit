@@ -1,0 +1,249 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AES_ENCRYPTION	mfptp_parser_machine_version1.h	/^	AES_ENCRYPTION = 	0x2,$/;"	e	enum:ENCRYPTION_FORMAR_TYPE
+ALL_PACK_EV	mfptp_parser_machine_version1.h	/^	ALL_PACK_EV,$/;"	e	enum:__anon2
+CHECK_SIZE	mfptp_parser_machine_version1.c	35;"	d	file:
+COMPRESSION_FORMAT_TYPE	mfptp_parser_machine_version1.h	/^enum COMPRESSION_FORMAT_TYPE{$/;"	g
+DEALER_METHOD	mfptp_parser_machine_version1.h	/^	DEALER_METHOD    = 0x05,$/;"	e	enum:WORK_METHOD
+DEAL_PACK_STATE	mfptp_parser_machine_version1.h	/^	DEAL_PACK_STATE ,$/;"	e	enum:__anon1
+ELSE_RETURN	mfptp_parser_machine_version1.c	31;"	d	file:
+ENCRYPTION_FORMAR_TYPE	mfptp_parser_machine_version1.h	/^enum ENCRYPTION_FORMAR_TYPE{$/;"	g
+FP_CONTROL_LOW01_BITS_MASK	mfptp_parser_machine_version1.c	10;"	d	file:
+FP_CONTROL_LOW01_BITS_MASK	mfptp_parser_machine_version2.c	10;"	d	file:
+FP_CONTROL_LOW23_BITS_MASK	mfptp_parser_machine_version1.c	11;"	d	file:
+FP_CONTROL_LOW23_BITS_MASK	mfptp_parser_machine_version2.c	11;"	d	file:
+FP_CONTROL_SIZE	mfptp_parser_machine_version1.c	9;"	d	file:
+FP_CONTROL_SIZE	mfptp_parser_machine_version2.c	9;"	d	file:
+FRAME_EV	mfptp_parser_machine_version1.h	/^	FRAME_EV,$/;"	e	enum:__anon2
+FRAME_NBR	login.c	9;"	d	file:
+FRAME_STATE	mfptp_parser_machine_version1.h	/^	FRAME_STATE ,$/;"	e	enum:__anon1
+FREE_MEM	mfptp_parser_machine_version1.c	181;"	d	file:
+FSM	mfptp_parser_machine_version2.c	26;"	d	file:
+FSM_STATE	mfptp_parser_machine_version1.h	/^}FSM_STATE;$/;"	t	typeref:enum:__anon1
+GET_LOW01_BITS	mfptp_parser_machine_version1.c	23;"	d	file:
+GET_LOW01_BITS	mfptp_parser_machine_version2.c	23;"	d	file:
+GET_LOW23_BITS	mfptp_parser_machine_version1.c	24;"	d	file:
+GET_LOW23_BITS	mfptp_parser_machine_version2.c	24;"	d	file:
+GZIP_COMPRESSION	mfptp_parser_machine_version1.h	/^	GZIP_COMPRESSION = 	0x2,$/;"	e	enum:COMPRESSION_FORMAT_TYPE
+HEAD_EV	mfptp_parser_machine_version1.h	/^	HEAD_EV,$/;"	e	enum:__anon2
+HEAD_STATE	mfptp_parser_machine_version1.h	/^	HEAD_STATE ,$/;"	e	enum:__anon1
+HEARTBEAT_METHOD	mfptp_parser_machine_version1.h	/^	HEARTBEAT_METHOD = 0x09,$/;"	e	enum:WORK_METHOD
+IDEA_ENCRYPTION	mfptp_parser_machine_version1.h	/^	IDEA_ENCRYPTION = 	0x1,$/;"	e	enum:ENCRYPTION_FORMAR_TYPE
+INIT_STATE	mfptp_parser_machine_version1.h	/^	INIT_STATE ,$/;"	e	enum:__anon1
+INVALID_EV	mfptp_parser_machine_version1.h	/^	INVALID_EV,\/\/ 错误事件,状态不变$/;"	e	enum:__anon2
+INVALID_METHOD	mfptp_parser_machine_version1.h	/^        INVALID_METHOD   = 0x10$/;"	e	enum:WORK_METHOD
+IS_AUTH	mfptp_parser_machine_version1.h	/^		IS_AUTH = 1,$/;"	e	enum:user_info::__anon3
+MAX_FRAMES_PER_PACKAGE	mfptp_parser_machine_version1.h	110;"	d
+MAX_TASK_FETCH_DEPTH	mfptp_evcb_version2.c	362;"	d	file:
+MFPTP_BURST_FRAME_START	mfptp_parser_machine_version1.c	19;"	d	file:
+MFPTP_BURST_FRAME_START	mfptp_parser_machine_version2.c	19;"	d	file:
+MFPTP_BURST_HEADER_DATA_MODE	mfptp_parser_machine_version1.c	16;"	d	file:
+MFPTP_BURST_HEADER_DATA_MODE	mfptp_parser_machine_version2.c	16;"	d	file:
+MFPTP_BURST_HEADER_LEN	mfptp_parser_machine_version1.c	13;"	d	file:
+MFPTP_BURST_HEADER_LEN	mfptp_parser_machine_version2.c	13;"	d	file:
+MFPTP_BURST_HEADER_PACKAGES	mfptp_parser_machine_version1.c	18;"	d	file:
+MFPTP_BURST_HEADER_PACKAGES	mfptp_parser_machine_version2.c	18;"	d	file:
+MFPTP_BURST_HEADER_SOCKET_MODE	mfptp_parser_machine_version1.c	17;"	d	file:
+MFPTP_BURST_HEADER_SOCKET_MODE	mfptp_parser_machine_version2.c	17;"	d	file:
+MFPTP_BURST_HEADER_START	mfptp_parser_machine_version1.c	14;"	d	file:
+MFPTP_BURST_HEADER_START	mfptp_parser_machine_version2.c	14;"	d	file:
+MFPTP_BURST_HEADER_VERSION	mfptp_parser_machine_version1.c	15;"	d	file:
+MFPTP_BURST_HEADER_VERSION	mfptp_parser_machine_version2.c	15;"	d	file:
+MFPTP_PARSER_TEST	mfptp_parser_machine_version1.h	33;"	d
+MFPTP_PARSE_HEAD	mfptp_parser_machine_version1.h	38;"	d
+MFPTP_PARSE_HEARTBEAT	mfptp_parser_machine_version1.h	45;"	d
+MFPTP_PARSE_ILEGAL	mfptp_parser_machine_version1.h	36;"	d
+MFPTP_PARSE_INIT	mfptp_parser_machine_version1.h	37;"	d
+MFPTP_PARSE_MOREDATA	mfptp_parser_machine_version1.h	41;"	d
+MFPTP_PARSE_NODATA	mfptp_parser_machine_version1.h	35;"	d
+MFPTP_PARSE_OFFLINE	mfptp_parser_machine_version1.h	44;"	d
+MFPTP_PARSE_OVER	mfptp_parser_machine_version1.h	40;"	d
+MFPTP_PARSE_PACKAGE	mfptp_parser_machine_version1.h	39;"	d
+MFPTP_PARSE_RETRY	mfptp_parser_machine_version1.h	43;"	d
+NO_AUTH	mfptp_parser_machine_version1.h	/^		NO_AUTH = 0,$/;"	e	enum:user_info::__anon3
+NO_COMPRESSION	mfptp_parser_machine_version1.h	/^	NO_COMPRESSION = 	0x0,$/;"	e	enum:COMPRESSION_FORMAT_TYPE
+NO_ENCRYPTION	mfptp_parser_machine_version1.h	/^	NO_ENCRYPTION = 	0x0,$/;"	e	enum:ENCRYPTION_FORMAR_TYPE
+OFFLINE_EV	mfptp_parser_machine_version1.h	/^	OFFLINE_EV,\/\/ 用户要下线了$/;"	e	enum:__anon2
+OVER_STATE	mfptp_parser_machine_version1.h	/^	OVER_STATE ,$/;"	e	enum:__anon1
+PACKAGE_HDR_LEN	mfptp_parser_machine_version1.c	142;"	d	file:
+PACK_NBR	login_and_send.c	15;"	d	file:
+PAIR_METHOD	mfptp_parser_machine_version1.h	/^	PAIR_METHOD      = 0x00,$/;"	e	enum:WORK_METHOD
+PTR_MOVE	mfptp_parser_machine_version1.c	26;"	d	file:
+PUB_METHOD	mfptp_parser_machine_version1.h	/^	PUB_METHOD       = 0x01,$/;"	e	enum:WORK_METHOD
+PULL_METHOD	mfptp_parser_machine_version1.h	/^	PULL_METHOD      = 0x07,$/;"	e	enum:WORK_METHOD
+PUSH_METHOD	mfptp_parser_machine_version1.h	/^	PUSH_METHOD      = 0x08,$/;"	e	enum:WORK_METHOD
+RECV_EV	mfptp_parser_machine_version1.h	/^}RECV_EV;$/;"	t	typeref:enum:__anon2
+REP_METHOD	mfptp_parser_machine_version1.h	/^	REP_METHOD       = 0x04,$/;"	e	enum:WORK_METHOD
+REQ_METHOD	mfptp_parser_machine_version1.h	/^	REQ_METHOD       = 0x03,$/;"	e	enum:WORK_METHOD
+RETRY_EV	mfptp_parser_machine_version1.h	/^	RETRY_EV,\/\/ 事件部分来了，但不齐全,需要记录已经读到的字节$/;"	e	enum:__anon2
+ROUTER_METHOD	mfptp_parser_machine_version1.h	/^	ROUTER_METHOD    = 0x06,$/;"	e	enum:WORK_METHOD
+SECRET_KEY_LEN	mfptp_parser_machine_version1.c	141;"	d	file:
+SEND_BUFF_LEN	login.c	8;"	d	file:
+SEND_BUFF_LEN	login_and_send.c	14;"	d	file:
+SINGLE_PACK_EV	mfptp_parser_machine_version1.h	/^	SINGLE_PACK_EV,$/;"	e	enum:__anon2
+SUB_METHOD	mfptp_parser_machine_version1.h	/^	SUB_METHOD       = 0x02,$/;"	e	enum:WORK_METHOD
+WORK_METHOD	mfptp_parser_machine_version1.h	/^enum WORK_METHOD{$/;"	g
+ZIP_COMPRESSION	mfptp_parser_machine_version1.h	/^	ZIP_COMPRESSION = 	0x1,$/;"	e	enum:COMPRESSION_FORMAT_TYPE
+_mfptp_auth_cb	mfptp_evcb_version2.c	/^static void _mfptp_auth_cb(struct ev_loop *loop, ev_io *w, int revents)$/;"	f	file:	signature:(struct ev_loop *loop, ev_io *w, int revents)
+_mfptp_pass_cb	mfptp_evcb_version2.c	/^static void _mfptp_pass_cb(struct ev_loop *loop, ev_io *w, int revents)$/;"	f	file:	signature:(struct ev_loop *loop, ev_io *w, int revents)
+_mfptp_recv_cb	mfptp_evcb_version2.c	/^static void _mfptp_recv_cb(struct ev_loop *loop, ev_io *w, int revents)$/;"	f	file:	signature:(struct ev_loop *loop, ev_io *w, int revents)
+_mfptp_recv_cb	mfptp_evcb_version2.c	/^static void _mfptp_recv_cb(struct ev_loop *loop, ev_io *w, int revents);$/;"	p	file:	signature:(struct ev_loop *loop, ev_io *w, int revents)
+_mfptp_send_cb	mfptp_evcb_version2.c	/^ void _mfptp_send_cb(struct ev_loop *loop, ev_io *w, int revents);$/;"	p	file:	signature:(struct ev_loop *loop, ev_io *w, int revents)
+_mfptp_send_cb	mfptp_evcb_version2.c	/^void _mfptp_send_cb(struct ev_loop *loop, ev_io *w, int revents)$/;"	f	signature:(struct ev_loop *loop, ev_io *w, int revents)
+_mfptp_timeout_cb	mfptp_evcb_version2.c	/^static void _mfptp_timeout_cb(struct ev_loop *loop, ev_timer *w, int revents)$/;"	f	file:	signature:(struct ev_loop *loop, ev_timer *w, int revents)
+_mfptp_timeout_cb	mfptp_evcb_version2.c	/^static void _mfptp_timeout_cb(struct ev_loop *loop, ev_timer *w, int revents);$/;"	p	file:	signature:(struct ev_loop *loop, ev_timer *w, int revents)
+auth_status	mfptp_parser_machine_version1.h	/^	} auth_status;				\/*io dispose*\/$/;"	m	struct:user_info	typeref:enum:user_info::__anon3	access:public
+bool	mfptp_parser_machine_version1.h	20;"	d
+callback_auth	mfptp_evcb_version2.c	/^static void * callback_auth( void *data )$/;"	f	file:	signature:( void *data )
+complete	mfptp_parser_machine_version1.h	/^	bool complete;$/;"	m	struct:mfptp_package	access:public
+compress	mfptp_parser_machine_version1.h	/^	uint8_t compress;$/;"	m	struct:mfptp_parser	access:public
+control	mfptp_parser_machine_version1.h	/^	int control;				\/*cmd dispose*\/$/;"	m	struct:user_info	access:public
+data	login.c	/^unsigned char *data[FRAME_NBR] = {$/;"	v
+data	login_and_send.c	/^char data[11] = "helloworld";$/;"	v
+data_tmp	login.c	/^unsigned char data_tmp[FRAME_NBR][5*1024*1024];$/;"	v
+dsizes	mfptp_parser_machine_version1.h	/^	int dsizes[MAX_FRAMES_PER_PACKAGE];	\/*-data size, all size is :fsize + dsize + 1, 1 is control size-*\/$/;"	m	struct:mfptp_package	access:public
+encrypt	mfptp_parser_machine_version1.h	/^	uint8_t encrypt;$/;"	m	struct:mfptp_parser	access:public
+false	mfptp_parser_machine_version1.h	29;"	d
+fetch_link_work_task	mfptp_evcb_version2.c	/^static int fetch_link_work_task(WORKER_PTHREAD *p_worker, struct ev_loop *loop)$/;"	f	file:	signature:(WORKER_PTHREAD *p_worker, struct ev_loop *loop)
+fetch_pipe_work_task	mfptp_evcb_version2.c	/^static int fetch_pipe_work_task(WORKER_PTHREAD *p_worker, struct ev_loop *loop)$/;"	f	file:	signature:(WORKER_PTHREAD *p_worker, struct ev_loop *loop)
+fetch_weibo_pipe_work_task	mfptp_evcb_version2.c	/^static int fetch_weibo_pipe_work_task(WORKER_PTHREAD *p_worker, struct ev_loop *loop)$/;"	f	file:	signature:(WORKER_PTHREAD *p_worker, struct ev_loop *loop)
+force_login	mfptp_parser_machine_version1.h	/^        int force_login; \/* 此标志为1表示不需要续传， 0表示需要续传*\/$/;"	m	struct:user_info	access:public
+frame_index	login_and_send.c	/^int frame_index = 0;\/\/帧索引$/;"	v
+frames	login_and_send.c	/^int frames = 10;\/\/ 帧个数$/;"	v
+frames	mfptp_parser_machine_version1.h	/^	int frames;	$/;"	m	struct:mfptp_package	access:public
+fsm_init	mfptp_parser_machine_version2.c	/^void fsm_init(struct user_info *usr)$/;"	f	signature:(struct user_info *usr)
+func	mfptp_parser_machine_version1.h	/^	mfptp_callback_func func;	\/*-callback function-*\/$/;"	m	struct:mfptp_parser	access:public
+g_dbg_time	mfptp_evcb_version2.c	/^static struct timeval g_dbg_time;$/;"	v	typeref:struct:timeval	file:
+g_delay_linger	mfptp_evcb_version2.c	/^static struct linger g_delay_linger = {$/;"	v	typeref:struct:linger	file:
+g_quick_linger	mfptp_evcb_version2.c	/^static struct linger g_quick_linger = {$/;"	v	typeref:struct:linger	file:
+got_FP_control_ev	mfptp_parser_machine_version2.c	/^int got_FP_control_ev(struct user_info* usr, char * buf, int len)$/;"	f	signature:(struct user_info* usr, char * buf, int len)
+got_FP_size_ev	mfptp_parser_machine_version2.c	/^int got_FP_size_ev(struct user_info* usr, char * buf, int len)$/;"	f	signature:(struct user_info* usr, char * buf, int len)
+got_frame_data_ev	mfptp_parser_machine_version2.c	/^int got_frame_data_ev(struct user_info* usr, char * buf, int len)$/;"	f	signature:(struct user_info* usr, char * buf, int len)
+got_header_ev	mfptp_parser_machine_version2.c	/^int got_header_ev(struct user_info* usr, char *buf, int len)$/;"	f	signature:(struct user_info* usr, char *buf, int len)
+i_watcher	mfptp_parser_machine_version1.h	/^	ev_io i_watcher;$/;"	m	struct:user_info	access:public
+key	mfptp_parser_machine_version1.h	/^        char key[16];     \/* 加密密钥，使用128bit长度*\/$/;"	m	struct:user_info	access:public
+main	login.c	/^int main(int argc , char *argv[])$/;"	f	signature:(int argc , char *argv[])
+main	login_and_send.c	/^int main()$/;"	f
+mem_free	mfptp_parser_machine_version2.c	/^void mem_free(char * ptr)$/;"	f	signature:(char * ptr)
+mem_get	mfptp_parser_machine_version2.c	/^char * mem_get(int size)$/;"	f	signature:(int size)
+method	mfptp_parser_machine_version1.h	/^	uint8_t  method;$/;"	m	struct:mfptp_parser	access:public
+mfptp_accept_cb	mfptp_evcb_version2.c	/^void mfptp_accept_cb(struct ev_loop *loop, ev_io *w, int revents)$/;"	f	signature:(struct ev_loop *loop, ev_io *w, int revents)
+mfptp_async_cb	mfptp_evcb_version2.c	/^void mfptp_async_cb(struct ev_loop *loop, ev_async *w, int revents)$/;"	f	signature:(struct ev_loop *loop, ev_async *w, int revents)
+mfptp_callback_func	mfptp_parser_machine_version1.h	/^typedef void* (*mfptp_callback_func)(void *);$/;"	t
+mfptp_check_cb	mfptp_evcb_version2.c	/^void mfptp_check_cb(struct ev_loop *loop, ev_check *w, int revents)$/;"	f	signature:(struct ev_loop *loop, ev_check *w, int revents)
+mfptp_dispatch_task	mfptp_evcb_version2.c	/^static void mfptp_dispatch_task(struct user_info *p_info)$/;"	f	file:	signature:(struct user_info *p_info)
+mfptp_fetch_cb	mfptp_evcb_version2.c	/^void mfptp_fetch_cb(struct ev_loop *loop, ev_io *w, int revents)$/;"	f	signature:(struct ev_loop *loop, ev_io *w, int revents)
+mfptp_frame	mfptp_parser_machine_version1.h	/^	char *mfptp_frame;\/\/ 临时指针指向frame数据,当全局变量使用$/;"	m	struct:mfptp_status	access:public
+mfptp_header	mfptp_parser_machine_version1.h	/^    char *mfptp_header;	$/;"	m	struct:mfptp_status	access:public
+mfptp_info	mfptp_parser_machine_version1.h	/^	struct mfptp_parser_info mfptp_info;$/;"	m	struct:user_info	typeref:struct:user_info::mfptp_parser_info	access:public
+mfptp_init_parser_info	mfptp_parser_machine_version1.c	/^void mfptp_init_parser_info(struct mfptp_parser_info *p_info)$/;"	f	signature:(struct mfptp_parser_info *p_info)
+mfptp_init_parser_info	mfptp_parser_machine_version1.h	/^void mfptp_init_parser_info(struct mfptp_parser_info *p_info);$/;"	p	signature:(struct mfptp_parser_info *p_info)
+mfptp_pack_frame	mfptp_parser_machine_version1.h	/^int mfptp_pack_frame(char *src, int len, char *buf, int more);$/;"	p	signature:(char *src, int len, char *buf, int more)
+mfptp_pack_frames_no_hdr	login.c	/^int mfptp_pack_frames_no_hdr(char *buf,char *data, int data_len,int more)$/;"	f	signature:(char *buf,char *data, int data_len,int more)
+mfptp_pack_frames_no_hdr	login_and_send.c	/^int mfptp_pack_frames_no_hdr(char buf,int buf_index,int data, char data_len, int more)$/;"	f	signature:(char buf,int buf_index,int data, char data_len, int more)
+mfptp_pack_frames_with_hdr	login.c	/^int mfptp_pack_frames_with_hdr( char *buf,char *data, int data_len,int more)$/;"	f	signature:( char *buf,char *data, int data_len,int more)
+mfptp_pack_frames_with_hdr	login_and_send.c	/^int mfptp_pack_frames_with_hdr( char *buf,int buf_index,char *data, int data_len,int more)$/;"	f	signature:( char *buf,int buf_index,char *data, int data_len,int more)
+mfptp_pack_frames_with_hdr	mfptp_parser_machine_version1.h	/^int mfptp_pack_frames_with_hdr(char *src, int len, char *dst, int more);$/;"	p	signature:(char *src, int len, char *dst, int more)
+mfptp_pack_hdr	mfptp_parser_machine_version1.h	/^int mfptp_pack_hdr(char *dst, int ver, int sk_type, int pkt_cnt);$/;"	p	signature:(char *dst, int ver, int sk_type, int pkt_cnt)
+mfptp_pack_login_ok	mfptp_parser_machine_version1.c	/^int mfptp_pack_login_ok(char *buf, int len, struct user_info *usr)$/;"	f	signature:(char *buf, int len, struct user_info *usr)
+mfptp_pack_string	login.c	/^int mfptp_pack_string(char *src, char *buf, int max_len)$/;"	f	signature:(char *src, char *buf, int max_len)
+mfptp_pack_string	login.c	/^int mfptp_pack_string(char *src, char *buf, int max_len);$/;"	p	file:	signature:(char *src, char *buf, int max_len)
+mfptp_pack_string	login_and_send.c	/^int mfptp_pack_string(char *src, char *buf, int max_len)$/;"	f	signature:(char *src, char *buf, int max_len)
+mfptp_pack_string	mfptp_parser_machine_version1.c	/^int mfptp_pack_string(char *src, char *buf, int max_len)$/;"	f	signature:(char *src, char *buf, int max_len)
+mfptp_package	mfptp_parser_machine_version1.h	/^struct mfptp_package{$/;"	s
+mfptp_package::complete	mfptp_parser_machine_version1.h	/^	bool complete;$/;"	m	struct:mfptp_package	access:public
+mfptp_package::dsizes	mfptp_parser_machine_version1.h	/^	int dsizes[MAX_FRAMES_PER_PACKAGE];	\/*-data size, all size is :fsize + dsize + 1, 1 is control size-*\/$/;"	m	struct:mfptp_package	access:public
+mfptp_package::frames	mfptp_parser_machine_version1.h	/^	int frames;	$/;"	m	struct:mfptp_package	access:public
+mfptp_package::ptrs	mfptp_parser_machine_version1.h	/^	char *ptrs[MAX_FRAMES_PER_PACKAGE];	\/*-data start pointer-*\/$/;"	m	struct:mfptp_package	access:public
+mfptp_parse	mfptp_parser_machine_version1.c	/^int mfptp_parse(struct user_info* usr)$/;"	f	signature:(struct user_info* usr)
+mfptp_parse	mfptp_parser_machine_version1.h	/^int mfptp_parse(struct user_info* usr);$/;"	p	signature:(struct user_info* usr)
+mfptp_parse_FP_control	mfptp_parser_machine_version2.c	/^void mfptp_parse_FP_control(struct user_info * usr)$/;"	f	signature:(struct user_info * usr)
+mfptp_parse_FP_size	mfptp_parser_machine_version2.c	/^void mfptp_parse_FP_size(struct user_info *usr){$/;"	f	signature:(struct user_info *usr)
+mfptp_parse_frame	mfptp_parser_machine_version1.c	/^ void mfptp_parse_frame(struct user_info* usr)$/;"	f	signature:(struct user_info* usr)
+mfptp_parse_frame	mfptp_parser_machine_version2.c	/^void mfptp_parse_frame(struct user_info *usr){$/;"	f	signature:(struct user_info *usr)
+mfptp_parse_fsm	mfptp_parser_machine_version2.c	/^int mfptp_parse_fsm(struct user_info* usr, char * buf, int len)$/;"	f	signature:(struct user_info* usr, char * buf, int len)
+mfptp_parse_head	mfptp_parser_machine_version1.c	/^int mfptp_parse_head(struct user_info* usr)$/;"	f	signature:(struct user_info* usr)
+mfptp_parse_head	mfptp_parser_machine_version2.c	/^int mfptp_parse_head(struct user_info* usr)$/;"	f	signature:(struct user_info* usr)
+mfptp_parse_package	mfptp_parser_machine_version1.c	/^void  mfptp_parse_package(struct user_info* usr)$/;"	f	signature:(struct user_info* usr)
+mfptp_parse_package	mfptp_parser_machine_version2.c	/^void  mfptp_parse_package(struct user_info* usr)$/;"	f	signature:(struct user_info* usr)
+mfptp_parser	mfptp_parser_machine_version1.h	/^struct mfptp_parser{$/;"	s
+mfptp_parser::compress	mfptp_parser_machine_version1.h	/^	uint8_t compress;$/;"	m	struct:mfptp_parser	access:public
+mfptp_parser::encrypt	mfptp_parser_machine_version1.h	/^	uint8_t encrypt;$/;"	m	struct:mfptp_parser	access:public
+mfptp_parser::func	mfptp_parser_machine_version1.h	/^	mfptp_callback_func func;	\/*-callback function-*\/$/;"	m	struct:mfptp_parser	access:public
+mfptp_parser::method	mfptp_parser_machine_version1.h	/^	uint8_t  method;$/;"	m	struct:mfptp_parser	access:public
+mfptp_parser::packages	mfptp_parser_machine_version1.h	/^	uint8_t packages;	\/*-package counts to parse-*\/$/;"	m	struct:mfptp_parser	access:public
+mfptp_parser::sub_version	mfptp_parser_machine_version1.h	/^	short sub_version;$/;"	m	struct:mfptp_parser	access:public
+mfptp_parser::version	mfptp_parser_machine_version1.h	/^	short version;$/;"	m	struct:mfptp_parser	access:public
+mfptp_parser_info	mfptp_parser_machine_version1.h	/^struct mfptp_parser_info{$/;"	s
+mfptp_parser_info::parser	mfptp_parser_machine_version1.h	/^	struct mfptp_parser parser;$/;"	m	struct:mfptp_parser_info	typeref:struct:mfptp_parser_info::mfptp_parser	access:public
+mfptp_parser_info::status	mfptp_parser_machine_version1.h	/^	struct mfptp_status status;$/;"	m	struct:mfptp_parser_info	typeref:struct:mfptp_parser_info::mfptp_status	access:public
+mfptp_register_callback	mfptp_parser_machine_version1.c	/^void mfptp_register_callback(struct user_info* usr, mfptp_callback_func fun)$/;"	f	signature:(struct user_info* usr, mfptp_callback_func fun)
+mfptp_register_callback	mfptp_parser_machine_version1.h	/^void mfptp_register_callback(struct user_info* usr, mfptp_callback_func fun);$/;"	p	signature:(struct user_info* usr, mfptp_callback_func fun)
+mfptp_reset_parser_info	mfptp_parser_machine_version2.c	/^void mfptp_reset_parser_info(struct user_info *p_info)$/;"	f	signature:(struct user_info *p_info)
+mfptp_signal_cb	mfptp_evcb_version2.c	/^void mfptp_signal_cb (struct ev_loop *loop, ev_signal *w, int revents)$/;"	f	signature:(struct ev_loop *loop, ev_signal *w, int revents)
+mfptp_status	mfptp_parser_machine_version1.h	/^struct mfptp_status{$/;"	s
+mfptp_status::mfptp_frame	mfptp_parser_machine_version1.h	/^	char *mfptp_frame;\/\/ 临时指针指向frame数据,当全局变量使用$/;"	m	struct:mfptp_status	access:public
+mfptp_status::mfptp_header	mfptp_parser_machine_version1.h	/^    char *mfptp_header;	$/;"	m	struct:mfptp_status	access:public
+mfptp_status::package	mfptp_parser_machine_version1.h	/^	struct mfptp_package package;	$/;"	m	struct:mfptp_status	typeref:struct:mfptp_status::mfptp_package	access:public
+mfptp_status::package_index	mfptp_parser_machine_version1.h	/^	int package_index;\/\/ 当前包是第几个包$/;"	m	struct:mfptp_status	access:public
+mfptp_status::recv_buf_index	mfptp_parser_machine_version1.h	/^	int recv_buf_index;$/;"	m	struct:mfptp_status	access:public
+mfptp_status::recv_bytes	mfptp_parser_machine_version1.h	/^    int recv_bytes;$/;"	m	struct:mfptp_status	access:public
+mfptp_status::sharp_pos	mfptp_parser_machine_version1.h	/^        int sharp_pos;  \/* 记录每个包开始的#的位置, 主要是为了计算续传的位置*\/$/;"	m	struct:mfptp_status	access:public
+mfptp_update_cb	mfptp_evcb_version2.c	/^void mfptp_update_cb(struct ev_loop *loop, ev_timer *w, int revents)$/;"	f	signature:(struct ev_loop *loop, ev_timer *w, int revents)
+mfptp_weibo_fetch_cb	mfptp_evcb_version2.c	/^void mfptp_weibo_fetch_cb(struct ev_loop *loop, ev_io *w, int revents)$/;"	f	signature:(struct ev_loop *loop, ev_io *w, int revents)
+move_to_state	mfptp_parser_machine_version2.c	/^void move_to_state(struct user_info* usr, FSM_STATE new_state)$/;"	f	signature:(struct user_info* usr, FSM_STATE new_state)
+node	mfptp_parser_machine_version1.h	/^	rb_node node; $/;"	m	struct:user_info	access:public
+o_watcher	mfptp_parser_machine_version1.h	/^	ev_io o_watcher;$/;"	m	struct:user_info	access:public
+old_sfd	mfptp_parser_machine_version1.h	/^        int old_sfd;$/;"	m	struct:user_info	access:public
+pack_and_send_data	login_and_send.c	/^void pack_and_send_data(int sockfd, char *src,int src_len,char * buf, int buf_len)$/;"	f	signature:(int sockfd, char *src,int src_len,char * buf, int buf_len)
+package	mfptp_parser_machine_version1.h	/^	struct mfptp_package package;	$/;"	m	struct:mfptp_status	typeref:struct:mfptp_status::mfptp_package	access:public
+package_index	mfptp_parser_machine_version1.h	/^	int package_index;\/\/ 当前包是第几个包$/;"	m	struct:mfptp_status	access:public
+packages	login_and_send.c	/^int packages = 0;\/\/ 包索引$/;"	v
+packages	mfptp_parser_machine_version1.h	/^	uint8_t packages;	\/*-package counts to parse-*\/$/;"	m	struct:mfptp_parser	access:public
+parser	mfptp_parser_machine_version1.h	/^	struct mfptp_parser parser;$/;"	m	struct:mfptp_parser_info	typeref:struct:mfptp_parser_info::mfptp_parser	access:public
+port	mfptp_parser_machine_version1.h	/^	int port;$/;"	m	struct:user_info	access:public
+processor	mfptp_parser_machine_version1.h	/^	WORKER_PTHREAD *processor;$/;"	m	struct:user_info	access:public
+ptrs	mfptp_parser_machine_version1.h	/^	char *ptrs[MAX_FRAMES_PER_PACKAGE];	\/*-data start pointer-*\/$/;"	m	struct:mfptp_package	access:public
+recv	mfptp_parser_machine_version1.h	/^	struct net_cache recv;$/;"	m	struct:user_info	typeref:struct:user_info::net_cache	access:public
+recv_buf_index	mfptp_parser_machine_version1.h	/^	int recv_buf_index;$/;"	m	struct:mfptp_status	access:public
+recv_bytes	mfptp_parser_machine_version1.h	/^    int recv_bytes;$/;"	m	struct:mfptp_status	access:public
+recv_ev	mfptp_parser_machine_version1.c	/^RECV_EV recv_ev(struct user_info* usr, FSM_STATE state)$/;"	f	signature:(struct user_info* usr, FSM_STATE state)
+recvn	mfptp_parser_machine_version1.c	/^int recvn(int fd, char *vptr, int n)$/;"	f	signature:(int fd, char *vptr, int n)
+send	mfptp_parser_machine_version1.h	/^	struct net_cache send;$/;"	m	struct:user_info	typeref:struct:user_info::net_cache	access:public
+send_buf	login_and_send.c	/^char send_buf[1024*1024*8]  = {0}, server_reply[2000] = {0};$/;"	v
+senddata	login.c	/^int  senddata(int fd, char *buf,char *data,int dlen)$/;"	f	signature:(int fd, char *buf,char *data,int dlen)
+senddata	login.c	/^int senddata(int fd, char *buf,char *,int dlen);$/;"	p	file:	signature:(int fd, char *buf,char *,int dlen)
+senddata_multi_frame	login.c	/^int  senddata_multi_frame(int fd, char *buf,char *data,int dlen,int more)$/;"	f	signature:(int fd, char *buf,char *data,int dlen,int more)
+server_reply	login_and_send.c	/^char send_buf[1024*1024*8]  = {0}, server_reply[2000] = {0};$/;"	v
+sfd	mfptp_parser_machine_version1.h	/^	int sfd;$/;"	m	struct:user_info	access:public
+sharp_pos	mfptp_parser_machine_version1.h	/^        int sharp_pos;  \/* 记录每个包开始的#的位置, 主要是为了计算续传的位置*\/$/;"	m	struct:mfptp_status	access:public
+status	mfptp_parser_machine_version1.h	/^	struct mfptp_status status;$/;"	m	struct:mfptp_parser_info	typeref:struct:mfptp_parser_info::mfptp_status	access:public
+sub_version	mfptp_parser_machine_version1.h	/^	short sub_version;$/;"	m	struct:mfptp_parser	access:public
+szAddr	mfptp_parser_machine_version1.h	/^	char szAddr[ INET_ADDRSTRLEN ];		\/* 255.255.255.255 *\/$/;"	m	struct:user_info	access:public
+true	mfptp_parser_machine_version1.h	24;"	d
+user_info	mfptp_parser_machine_version1.h	/^struct user_info {$/;"	s
+user_info::IS_AUTH	mfptp_parser_machine_version1.h	/^		IS_AUTH = 1,$/;"	e	enum:user_info::__anon3
+user_info::NO_AUTH	mfptp_parser_machine_version1.h	/^		NO_AUTH = 0,$/;"	e	enum:user_info::__anon3
+user_info::auth_status	mfptp_parser_machine_version1.h	/^	} auth_status;				\/*io dispose*\/$/;"	m	struct:user_info	typeref:enum:user_info::__anon3	access:public
+user_info::control	mfptp_parser_machine_version1.h	/^	int control;				\/*cmd dispose*\/$/;"	m	struct:user_info	access:public
+user_info::force_login	mfptp_parser_machine_version1.h	/^        int force_login; \/* 此标志为1表示不需要续传， 0表示需要续传*\/$/;"	m	struct:user_info	access:public
+user_info::i_watcher	mfptp_parser_machine_version1.h	/^	ev_io i_watcher;$/;"	m	struct:user_info	access:public
+user_info::key	mfptp_parser_machine_version1.h	/^        char key[16];     \/* 加密密钥，使用128bit长度*\/$/;"	m	struct:user_info	access:public
+user_info::mfptp_info	mfptp_parser_machine_version1.h	/^	struct mfptp_parser_info mfptp_info;$/;"	m	struct:user_info	typeref:struct:user_info::mfptp_parser_info	access:public
+user_info::node	mfptp_parser_machine_version1.h	/^	rb_node node; $/;"	m	struct:user_info	access:public
+user_info::o_watcher	mfptp_parser_machine_version1.h	/^	ev_io o_watcher;$/;"	m	struct:user_info	access:public
+user_info::old_sfd	mfptp_parser_machine_version1.h	/^        int old_sfd;$/;"	m	struct:user_info	access:public
+user_info::port	mfptp_parser_machine_version1.h	/^	int port;$/;"	m	struct:user_info	access:public
+user_info::processor	mfptp_parser_machine_version1.h	/^	WORKER_PTHREAD *processor;$/;"	m	struct:user_info	access:public
+user_info::recv	mfptp_parser_machine_version1.h	/^	struct net_cache recv;$/;"	m	struct:user_info	typeref:struct:user_info::net_cache	access:public
+user_info::send	mfptp_parser_machine_version1.h	/^	struct net_cache send;$/;"	m	struct:user_info	typeref:struct:user_info::net_cache	access:public
+user_info::sfd	mfptp_parser_machine_version1.h	/^	int sfd;$/;"	m	struct:user_info	access:public
+user_info::szAddr	mfptp_parser_machine_version1.h	/^	char szAddr[ INET_ADDRSTRLEN ];		\/* 255.255.255.255 *\/$/;"	m	struct:user_info	access:public
+user_info::who	mfptp_parser_machine_version1.h	/^	char who[64];$/;"	m	struct:user_info	access:public
+user_tree	mfptp_evcb_version2.c	/^rb_root user_tree = RB_ROOT ;$/;"	v
+version	mfptp_parser_machine_version1.h	/^	short version;$/;"	m	struct:mfptp_parser	access:public
+who	mfptp_parser_machine_version1.h	/^	char who[64];$/;"	m	struct:user_info	access:public
